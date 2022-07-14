@@ -24,6 +24,7 @@
         </button>
         </form> -->
         
+        <!--Card de cuadrado -->     
         <div class="card" >
             <div class="card-header">
               Cuadrado
@@ -43,17 +44,28 @@
                 </button>
             </div>
         </div>
-
+ 
+        <!--Card de triangulo -->     
         <div class="card" >
             <div class="card-header">
               Triangulo
             </div>
             <div class="card-body">
                 <h5 class="card-title"> Calcula el altura, área y perímetro de un triangulo</h5>
-                <label for="InputTriangulo">
-                    Escribe cuanto mide cada lado de tu cuadrado: 
+                <label for="InputTrianguloLado1">
+                    Escribe cuanto mide un lado de tu triangulo: 
                 </label>
-                <input id="InputTriangulo"  type="number"/>
+                <input id="InputTrianguloLado1"  type="number"/>
+                <br>
+                <label for="InputTrianguloLado2">
+                    Escribe cuanto mide un lado de tu triangulo: 
+                </label>
+                <input id="InputTrianguloLado2"  type="number"/>
+                <br>
+                <label for="InputTrianguloBase">
+                    Escribe cuanto mide la base de tu triangulo: 
+                </label>
+                <input id="InputTrianguloBase"  type="number"/>
                 <br><br>
                 <button type = "button" class="btn btn-primary" onclick="calcularAlturaTriangulo()">
                     Calcular la altura área
@@ -65,6 +77,27 @@
                     Calcular el perímetro
                 </button>
 
+            </div>
+        </div>
+
+        <!--Card de circulo -->     
+        <div class="card" >
+            <div class="card-header">
+              Círculo
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"> Calcula el área y perímetro de un círculo</h5>
+                <label for="InputCirculo">
+                    Escribe cuanto mide el radio de tu círculo: 
+                </label>
+                <input id="InputCirculo"  type="number"/>
+                <br><br>
+                <button type = "button" class="btn btn-primary" onclick="calcularPerimetroCirculo()">
+                    Calcular el perímetro
+                </button>
+                <button type = "button" class="btn btn-primary" onclick="calcularAreaCirculo()">
+                    Calcular el área
+                </button>
             </div>
         </div>
 
