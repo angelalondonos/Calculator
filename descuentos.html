@@ -11,7 +11,7 @@
         <h1>Porcentajes y descuentos</h1>
     </header>
     <section>
-        <!--Card de circulo -->     
+        <!--Card de descuento con porcentaje -->     
         <div class="card" >
             <div class="card-body">
                 <h5 class="card-title"> Calcula el precio a pagar de tus productos con descuento</h5>
@@ -24,13 +24,25 @@
                 </label>
                 <input id="InputDescuento"  type="number"/>
                 <br><br>
-                <button type = "button" class="btn btn-primary" onclick="calcularDescuento()">
-                    Calcular valor total con descuento
+                <button type = "button" class="btn btn-success" onclick="calcularDescuento()">
+                    Calcular
                 </button>
                 <br><br>
                 <p id = "Resultado"></p>
+
+                <h5 class="card-title"> Calcula el precio a pagar de tus productos con cupón</h5>
+                <label for="InputCoupon">Escribe el cupón de descuento para tu producto:</label>
+                <input id="InputCoupon" type="text" />
+                <br><br>
+                <button type = "button" class="btn btn-success" onclick="calcularDescuentoConCupon()">
+                    Calcular
+                </button>
+                <br><br>
+                <p id = "ResultadoCupon"></p>
             </div>
         </div>
+    </section>
+    <section>
 
     </section>
     <script src='./descuentos.js'></script>
