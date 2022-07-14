@@ -9,7 +9,6 @@ const areaCuadrado = lado => lado * lado
 const perimetroTriangulo = (lado1, lado2, base) => lado1 + lado2 + base
 const areaTriangulo = (base, altura) => (base * altura) / 2
 
-
 function calcularAltura(lado1, lado2, base){
     var altura;
     
@@ -27,7 +26,7 @@ function calcularAltura(lado1, lado2, base){
 const perimetroCirculo = radio => 2 * Math.PI * radio
 const areaCirculo = radio => Math.PI * radio * radio
 
-//Aquí interactuamos con el HTML
+//Aquí interactuamos con el HTML para el cuadrado 
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
@@ -43,3 +42,6 @@ function calcularAreaCuadrado(){
     const area = areaCuadrado(value);
     alert(area);    
 } 
+
+
+//Aquí interactuamos con el HTML para el triangulo 

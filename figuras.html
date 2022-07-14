@@ -11,11 +11,7 @@
         <h1>Figuras geométricas</h1>
     </header>
     <section>
-        <h2>
-            Calcula el área y perímetro de un cuadrado
-        </h2>
-
-        <form>
+<!--         <form>
             <label for="InputCuadrado">
                 Escribe cuanto mide cada lado de tu cuadrado: 
             </label>
@@ -23,12 +19,57 @@
         <button type = "button" onclick="calcularPerimetroCuadrado()">
             Calcular el perímetro
         </button>
-        <button type = "button" onclick="calcularAreaCuadrado()"">
+        <button type = "button" onclick="calcularAreaCuadrado()">
             Calcular el área
         </button>
+        </form> -->
+        
+        <div class="card" >
+            <div class="card-header">
+              Cuadrado
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"> Calcula el área y perímetro de un cuadrado</h5>
+                <label for="InputCuadrado">
+                    Escribe cuanto mide cada lado de tu cuadrado: 
+                </label>
+                <input id="InputCuadrado"  type="number"/>
+                <br><br>
+                <button type = "button" class="btn btn-primary" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perímetro
+                </button>
+                <button type = "button" class="btn btn-primary" onclick="calcularAreaCuadrado()">
+                    Calcular el área
+                </button>
+            </div>
+        </div>
 
-        </form>
+        <div class="card" >
+            <div class="card-header">
+              Triangulo
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"> Calcula el altura, área y perímetro de un triangulo</h5>
+                <label for="InputTriangulo">
+                    Escribe cuanto mide cada lado de tu cuadrado: 
+                </label>
+                <input id="InputTriangulo"  type="number"/>
+                <br><br>
+                <button type = "button" class="btn btn-primary" onclick="calcularAlturaTriangulo()">
+                    Calcular la altura área
+                </button> 
+                <button type = "button" class="btn btn-primary" onclick="calcularAreaTriangulo()">
+                    Calcular el área
+                </button> 
+                <button type = "button" class="btn btn-primary" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perímetro
+                </button>
+
+            </div>
+        </div>
+
     </section>
     <script src='./figuras.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </body>
 </html>
