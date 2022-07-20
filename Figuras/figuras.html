@@ -10,48 +10,41 @@
     <header>
         <h1>Figuras geométricas</h1>
     </header>
-    <section>
-<!--         <form>
-            <label for="InputCuadrado">
-                Escribe cuanto mide cada lado de tu cuadrado: 
-            </label>
-        <input id="InputCuadrado"  type="number"/>
-        <button type = "button" onclick="calcularPerimetroCuadrado()">
-            Calcular el perímetro
-        </button>
-        <button type = "button" onclick="calcularAreaCuadrado()">
-            Calcular el área
-        </button>
-        </form> -->
-        
+    <section class="section">
+
         <!--Card de cuadrado -->     
         <div class="card" >
             <div class="card-header">
-              Cuadrado
+                <div class="figura">
+                    <!-- <img src="http://assets.stickpng.com/thumbs/58afdac9829958a978a4a691.png" alt="cuadrado"> -->
+                </div>
             </div>
+            
             <div class="card-body">
-                <h5 class="card-title"> Calcula el área y perímetro de un cuadrado</h5>
                 <label for="InputCuadrado">
                     Escribe cuanto mide cada lado de tu cuadrado: 
                 </label>
                 <input id="InputCuadrado"  type="number"/>
                 <br><br>
-                <button type = "button" class="btn btn-primary" onclick="calcularPerimetroCuadrado()">
-                    Calcular el perímetro
-                </button>
-                <button type = "button" class="btn btn-primary" onclick="calcularAreaCuadrado()">
-                    Calcular el área
-                </button>
+                <div class="boton">
+                    <button type = "button" class="btn btn-primary" onclick="calcularPerimetroCuadrado()">
+                        Calcular el perímetro
+                    </button>
+                    <button type = "button" class="btn btn-primary" onclick="calcularAreaCuadrado()">
+                        Calcular el área
+                    </button>
+                </div>
             </div>
         </div>
  
         <!--Card de triangulo -->     
         <div class="card" >
             <div class="card-header">
-              Triangulo
+                <div class="figura">
+                    <!-- <img src="http://assets.stickpng.com/thumbs/58afdac9829958a978a4a691.png" alt="cuadrado"> -->
+                </div>
             </div>
             <div class="card-body">
-                <h5 class="card-title"> Calcula el altura, área y perímetro de un triangulo</h5>
                 <label for="InputTrianguloLado1">
                     Escribe cuanto mide un lado de tu triangulo: 
                 </label>
@@ -83,10 +76,11 @@
         <!--Card de circulo -->     
         <div class="card" >
             <div class="card-header">
-              Círculo
+                <div class="figura">
+                    <!-- <img src="http://assets.stickpng.com/thumbs/58afdac9829958a978a4a691.png" alt="cuadrado"> -->
+                </div>
             </div>
             <div class="card-body">
-                <h5 class="card-title"> Calcula el área y perímetro de un círculo</h5>
                 <label for="InputCirculo">
                     Escribe cuanto mide el radio de tu círculo: 
                 </label>
@@ -104,5 +98,7 @@
     </section>
     <script src='./figuras.js'></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="figuras.css">
+
 </body>
 </html>
