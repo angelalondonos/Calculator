@@ -23,8 +23,8 @@ function calcularAltura(lado1, lado2, base){
 
 //código para calcular el diámetro y perímetro de un círculo
 
-const perimetroCirculo = radio => 2 * Math.PI * radio
-const areaCirculo = radio => Math.PI * radio * radio
+const perimetroCirculo = radio => 2 * 3.1416 * radio
+const areaCirculo = radio => 3.1416 * radio * radio
 
 //Aquí interactuamos con el HTML para el cuadrado 
 function calcularPerimetroCuadrado(){
@@ -32,7 +32,8 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    ResultadoCuadrado.innerText = "El perímetro del cuadrado es: " + perimetro;
+
 } 
 
 function calcularAreaCuadrado(){
@@ -40,7 +41,7 @@ function calcularAreaCuadrado(){
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(area);    
+    ResultadoCuadrado.innerText = "El área del cuadrado es: " + area;
 } 
 
 
@@ -88,7 +89,7 @@ function calcularPerimetroCirculo(){
     const value = input.value;
 
     const perimetro = perimetroCirculo(value);
-    alert(perimetro);
+    ResultadoCirculo.innerText = "El perímetro del circulo es: " + perimetro;
 } 
 
 function calcularAreaCirculo(){
@@ -96,6 +97,6 @@ function calcularAreaCirculo(){
     const value = input.value;
 
     const area = areaCirculo(value);
-    alert(area);    
+    ResultadoCirculo.innerText = "El área del circulo es: " + area;
 } 
 

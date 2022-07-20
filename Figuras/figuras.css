@@ -56,7 +56,7 @@ input{
     border-radius: 50%;
     border: 5px solid white;
     z-index: 20;
-    background: aqua center/cover no-repeat;
+    background: #CDF5F5 center/cover no-repeat;
 }
 
 .card-body{
