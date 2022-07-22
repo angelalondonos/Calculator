@@ -46,7 +46,7 @@ input{
     z-index: 10;
 }
 
-.figura{
+/* .figura{
     display: inline-block;
     position: absolute;
     top: 90px;
@@ -56,7 +56,31 @@ input{
     border-radius: 50%;
     border: 5px solid white;
     z-index: 20;
-    background: #CDF5F5 center/cover no-repeat;
+    background: #dbf0f0 center/cover no-repeat;
+}
+
+.figura img{
+    align-items: center; 
+    width: 40px;
+} */
+
+.figura{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: #dbf0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 24px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+
+}
+.figura img{
+    width: 50px;
 }
 
 .card-body{
